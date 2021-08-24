@@ -1,0 +1,9 @@
+<form #form="ngForm" (ngSubmit)="getValue(form.value)">
+  <input type="text" required placeholder="email" id="email" ngModel name="email"><br><br>
+  <input type="text" required placeholder="password" id="password" ngModel name="password"><br><br>
+  <button>submit</button>
+</form>
+
+<div class="">
+  <a routerLink="/register">Register here</a>
+</div>

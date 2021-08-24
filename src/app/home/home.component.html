@@ -1,0 +1,15 @@
+<p>Saldo: {{balance}}</p>
+
+<p>Transaksi</p>
+<ul>
+  <li *ngFor="let transaction of transactions">
+    {{transaction.jumlah}}
+    {{transaction.tanggal}}
+  </li>
+</ul>
+
+<p>Top up</p>
+<form #form="ngForm" (ngSubmit)="getValue(form.value)">
+  <input type="text" required placeholder="amount" id="saldo" ngModel name="saldo"><br><br>
+  <button>submit</button>
+</form>
